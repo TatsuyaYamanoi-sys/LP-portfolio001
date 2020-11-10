@@ -87,7 +87,7 @@ intro-section
 }
 
 .intro-section_header{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 /*
@@ -95,7 +95,7 @@ nav
 */
 
 .intro-section_navi{
-    padding: 70px 0 70px;
+    padding: 80px 0 80px;
 }
 
 .intro-section_navi ol{
