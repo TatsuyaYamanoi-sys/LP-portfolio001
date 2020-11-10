@@ -46,7 +46,7 @@ main-visual
     position: relative;
     height: 480px;
     background: center center no-repeat;
-    background-image: url("C:/Users/user/Desktop/div/javascript_programs/img/white_00055_background.jpg");
+    background-image: url("img/white_00055_background.jpg");
     background-size: 100% 480px;
 }
 
@@ -132,12 +132,12 @@ main-contents
 }
 
 .intro-section_block:nth-child(1){
-    background-image: url("https://github.com/TatsuyaYamanoi-sys/portfolio001/blob/main/img/image1.jpeg");
+    background-image: url("img/image1.jpeg");
     background-size: 50% 400px;
 }
 
 .intro-section_block:nth-child(2){
-    background-image: url("https://github.com/TatsuyaYamanoi-sys/portfolio001/blob/main/img/image2.jpeg");
+    background-image: url("img/image2.jpeg");
     background-size: 50% 400px;
 }
 
