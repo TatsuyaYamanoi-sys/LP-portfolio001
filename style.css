@@ -17,6 +17,7 @@ page-header
 
 .sel-header{
     display: flex;
+    height: 70px;
     align-items: center;
     justify-content: space-between;
 }
@@ -75,9 +76,9 @@ intro-section
 /* section-header = 帯のスタイル */
 .section-header{
     position: relative;
-    padding: 30px 0;
+    padding: calc((87px - (30px * 1.6)) / 2) 0; /* 2行以上になる事を配慮する。 (height - (fontsize * lineHeight)) / 2 */
     text-align: center;
-    background: rgb(128, 128, 128);
+    background: rgb(150, 150, 150);
 }
 
 .section-header_ttl{
@@ -85,7 +86,20 @@ intro-section
     font-weight: normal;
     color: rgb(255, 255, 255);
 }
-
+/*
+.section-header:after:{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-color: rgb(150, 150, 150) transparent transparent transparent;
+    border-style: solid;
+    border-width: 28px 28px 0;
+    transform: translate(-50%, 100%);
+    content: "";
+}
+*/
 .intro-section_header{
     margin-bottom: 10px;
 }
@@ -101,10 +115,25 @@ nav
 .intro-section_navi ol{
     display: flex;
     justify-content: space-between;
+    width: 850px;
+    margin: 0 auto;
+    list-style: none;
 }
 
 .intro-section_navi ol li{
     position: relative;
+}
+
+.intro-section_navi ol li:after{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-right: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    transform: translateX(-50%) rotate(45deg);
+    content: "";
 }
 
 .intro-section_navi ol li a{
@@ -160,16 +189,21 @@ main-contents
 
 .intro-section_txt-area{
     box-sizing: border-box;
+    padding: 25px 20px;
     color: rgb(255, 255, 255);
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(150, 150, 150);
 }
 
 .intro-section_txt-area h4{
-    font-size: 1.6rem;
+    margin-bottom: 22px;
+    line-height: 1.5;
+    font-weight: normal;
+    font-size: 1.8rem;
 }
 
 .intro-section_txt-area p{
-    font-size: 1.4rem;
+    line-height: 1.5;
+    font-size: 1.6rem;
 }
 
 /*
@@ -184,8 +218,9 @@ contact
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 55px;
-    background: rgb(128, 128, 128);
+    width: 90%;
+    padding: 40px 50px 40px 60px;
+    background: rgb(150, 150, 150);
 }
 
 .contact-block_txt{
@@ -203,7 +238,8 @@ contact
 }
 
 .contact-block_btn{
-    width: 370px;
+    margin-right: 55px;
+    width: 360px;
     padding: 20px 0;
     color: rgb(255, 255, 255);
     font-size: 2rem;
@@ -219,9 +255,11 @@ page-footer
 .sel-footer{
     padding: 40px 0;
     color: rgb(255, 255, 255);
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(150, 150, 150);
 }
 
 .sel-footer small{
+    display: block;
     font-size: 1.1rem;
+    line-height: 1;
 }
