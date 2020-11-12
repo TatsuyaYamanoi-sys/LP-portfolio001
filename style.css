@@ -7,8 +7,12 @@ page
 */
 
 .inr{
-    width: 960px;
+    width: 80%;
     margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
 }
 
 /*
@@ -17,7 +21,7 @@ page-header
 
 .sel-header{
     display: flex;
-    height: 70px;
+    height: 85px;
     align-items: center;
     justify-content: space-between;
 }
@@ -47,7 +51,22 @@ page-header
 }
 
 /*
-main-visual
+* campaign
+*/
+
+.campaign_visual{
+    position: relative;
+    height: 30px;
+    padding-top: 10px;
+    background-color: rgb(150, 150, 150);
+}
+.campaign_txt{
+    font-size: 20px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+}
+/*
+* main-visual
 */
 
 .main-visual{
